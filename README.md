@@ -14,3 +14,6 @@ output:
     +'10,11,12,13,14\n'
     +'20,21,22,23,24\n'
     +'30,31,32,33,34'
+
+
+**Method**: I created a function that takes an array as its parameter and uses the expression array.map(row => row.join(',')).join('\n'). Here, array.map() goes through each element of the array and returns a new array with the results. Since the array is a 2D array, each element (row) is itself an inner array. The row.join(',') method converts each inner array into a string, with its elements separated by commas. Finally, .join('\n') combines all these strings into a single string, placing each inner array on a new line.
